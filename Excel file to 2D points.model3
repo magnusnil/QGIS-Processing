@@ -428,7 +428,16 @@
       </Option>
     </Option>
   </Option>
-  <Option name="help"/>
+  <Option name="help" type="Map">
+    <Option name="ALG_CREATOR" value="Magnus Nilsson, Västra Götalandsregionen&#xa;magnus.nilsson@vgregion.se&#xa;" type="QString"/>
+    <Option name="ALG_DESC" value="This model reads an Excel file, filters out bad/missing data and creates 2D point geometries." type="QString"/>
+    <Option name="ALG_HELP_CREATOR" value="" type="QString"/>
+    <Option name="ALG_VERSION" value="" type="QString"/>
+    <Option name="HELP_URL" value="" type="QString"/>
+    <Option name="SHORT_DESCRIPTION" value="" type="QString"/>
+    <Option name="qgis:createpointslayerfromtable_1:Resultat" value="" type="QString"/>
+    <Option name="vektorlager" value="" type="QString"/>
+  </Option>
   <Option name="model_group" value="Test" type="QString"/>
   <Option name="model_name" value="Excel file to 2D points" type="QString"/>
   <Option name="parameterDefinitions" type="Map">
