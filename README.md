@@ -1,2 +1,2 @@
 # QGIS-Processing
-Processing models for QGIS 3
+A collection of Processing models for QGIS 3
