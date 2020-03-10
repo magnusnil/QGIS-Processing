@@ -1,0 +1,371 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="native:filter_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config" type="Map">
+        <Option name="outputs" type="List">
+          <Option type="Map">
+            <Option name="expression" value=" &quot;Avrundat_avstand&quot; &lt; 1000" type="QString"/>
+            <Option name="isModelOutput" value="true" type="bool"/>
+            <Option name="name" value="0-1000" type="QString"/>
+          </Option>
+          <Option type="Map">
+            <Option name="expression" value="&quot;Avrundat_avstand&quot;  >=  1000 and &quot;Avrundat_avstand&quot;  &lt;= 5000" type="QString"/>
+            <Option name="isModelOutput" value="true" type="bool"/>
+            <Option name="name" value="1000-5000" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+      <Option name="alg_id" value="native:filter" type="QString"/>
+      <Option name="component_description" value="Objektfiltrering" type="QString"/>
+      <Option name="component_pos_x" value="1738" type="double"/>
+      <Option name="component_pos_y" value="755" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:filter_1" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="OUTPUT_0-1000" type="Map">
+          <Option name="child_id" value="native:filter_1" type="QString"/>
+          <Option name="component_description" value="OUTPUT_0-1000" type="QString"/>
+          <Option name="component_pos_x" value="2036" type="double"/>
+          <Option name="component_pos_y" value="802" type="double"/>
+          <Option name="default_value" type="Map">
+            <Option name="class" value="QgsProcessingOutputLayerDefinition" type="QString"/>
+            <Option name="create_options" type="Map">
+              <Option name="fileEncoding" value="System" type="QString"/>
+            </Option>
+            <Option name="sink" type="Map">
+              <Option name="active" value="true" type="bool"/>
+              <Option name="type" value="1" type="int"/>
+              <Option name="val" value="C:/Users/magni8/Desktop/0-1000m.xlsx" type="QString"/>
+            </Option>
+          </Option>
+          <Option name="mandatory" value="true" type="bool"/>
+          <Option name="name" value="OUTPUT_0-1000" type="QString"/>
+          <Option name="output_name" value="OUTPUT_0-1000" type="QString"/>
+        </Option>
+        <Option name="OUTPUT_1000-5000" type="Map">
+          <Option name="child_id" value="native:filter_1" type="QString"/>
+          <Option name="component_description" value="OUTPUT_1000-5000" type="QString"/>
+          <Option name="component_pos_x" value="2035" type="double"/>
+          <Option name="component_pos_y" value="868" type="double"/>
+          <Option name="default_value" type="Map">
+            <Option name="class" value="QgsProcessingOutputLayerDefinition" type="QString"/>
+            <Option name="create_options" type="Map">
+              <Option name="fileEncoding" value="System" type="QString"/>
+            </Option>
+            <Option name="sink" type="Map">
+              <Option name="active" value="true" type="bool"/>
+              <Option name="type" value="1" type="int"/>
+              <Option name="val" value="C:/Users/magni8/Desktop/1000-5000.xlsx" type="QString"/>
+            </Option>
+          </Option>
+          <Option name="mandatory" value="true" type="bool"/>
+          <Option name="name" value="OUTPUT_1000-5000" type="QString"/>
+          <Option name="output_name" value="OUTPUT_1000-5000" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:orderbyexpression_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:orderbyexpression_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:orderbyexpression" type="QString"/>
+      <Option name="component_description" value="Sortera med uttryck" type="QString"/>
+      <Option name="component_pos_x" value="1495.8962172647923" type="double"/>
+      <Option name="component_pos_y" value="654.4005819592627" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:orderbyexpression_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ASCENDING" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="true" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="EXPRESSION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="&quot;Avrundat_avstand&quot;" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="qgis:deletecolumn_2" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NULLS_FIRST" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:deletecolumn_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="qgis:deletecolumn" type="QString"/>
+      <Option name="component_description" value="Släng fält" type="QString"/>
+      <Option name="component_pos_x" value="1192.5842224377634" type="double"/>
+      <Option name="component_pos_y" value="511.7242159715487" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="qgis:deletecolumn_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="COLUMN" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="HubDist" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="qgis:fieldcalculator_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:deletecolumn_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="qgis:deletecolumn" type="QString"/>
+      <Option name="component_description" value="Släng fält" type="QString"/>
+      <Option name="component_pos_x" value="1194.0798577432915" type="double"/>
+      <Option name="component_pos_y" value="589.5476883284836" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="qgis:deletecolumn_2" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="COLUMN" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="HubName" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="qgis:deletecolumn_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:distancetonearesthubpoints_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="qgis:distancetonearesthubpoints" type="QString"/>
+      <Option name="component_description" value="Avstånd till närmaste nav (punkter)" type="QString"/>
+      <Option name="component_pos_x" value="877.8011639185261" type="double"/>
+      <Option name="component_pos_y" value="361.1584222437763" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="qgis:distancetonearesthubpoints_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="fid" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="HUBS" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="saga:convertlinestopoints_1" type="QString"/>
+            <Option name="output_name" value="POINTS" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="verksamheter" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="UNIT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:fieldcalculator_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="qgis:fieldcalculator" type="QString"/>
+      <Option name="component_description" value="Fältkalkylator" type="QString"/>
+      <Option name="component_pos_x" value="880.2945360491435" type="double"/>
+      <Option name="component_pos_y" value="452.178790817976" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="qgis:fieldcalculator_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_LENGTH" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="10" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="Avrundat_avstand" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_PRECISION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FORMULA" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="round(  &quot;HubDist&quot; ,1)" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="qgis:distancetonearesthubpoints_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NEW_FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="true" type="bool"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="saga:convertlinestopoints_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="saga:convertlinestopoints" type="QString"/>
+      <Option name="component_description" value="Convert lines to points" type="QString"/>
+      <Option name="component_pos_x" value="667.3462657613966" type="double"/>
+      <Option name="component_pos_y" value="221.11089557064338" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="saga:convertlinestopoints_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ADD         " type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="true" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="DIST" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="double"/>
+          </Option>
+        </Option>
+        <Option name="LINES" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="led" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="model_group" value="Test" type="QString"/>
+  <Option name="model_name" value="Verksamheter inom x km från led" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="led" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="1" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="Led" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="led" type="QString"/>
+      <Option name="parameter_type" value="source" type="QString"/>
+    </Option>
+    <Option name="native:filter_1:OUTPUT_0-1000" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default"/>
+      <Option name="description" value="OUTPUT_0-1000" type="QString"/>
+      <Option name="flags" value="16" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="native:filter_1:OUTPUT_0-1000" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+    </Option>
+    <Option name="native:filter_1:OUTPUT_1000-5000" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default"/>
+      <Option name="description" value="OUTPUT_1000-5000" type="QString"/>
+      <Option name="flags" value="16" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="native:filter_1:OUTPUT_1000-5000" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+    </Option>
+    <Option name="verksamheter" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="0" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="Verksamheter" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="verksamheter" type="QString"/>
+      <Option name="parameter_type" value="source" type="QString"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="led" type="Map">
+      <Option name="component_description" value="led" type="QString"/>
+      <Option name="component_pos_x" value="389.67183963789205" type="double"/>
+      <Option name="component_pos_y" value="191.02942127384415" type="double"/>
+      <Option name="name" value="led" type="QString"/>
+    </Option>
+    <Option name="verksamheter" type="Map">
+      <Option name="component_description" value="verksamheter" type="QString"/>
+      <Option name="component_pos_x" value="388.66731328806975" type="double"/>
+      <Option name="component_pos_y" value="286.22858066602" type="double"/>
+      <Option name="name" value="verksamheter" type="QString"/>
+    </Option>
+  </Option>
+</Option>
