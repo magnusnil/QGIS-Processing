@@ -1,6 +1,9 @@
 # QGIS-Processing
 A collection of Processing models for QGIS 3
 
+Excel file to 2D points.model3
+Creates 2D points from coordinates in an excel file. Model output is:
+- 2D points
 
 Filter points based on distance from line.model3. 
 Filters points based on distance from line. Created in QGIS 3.4.11. Model output is:
