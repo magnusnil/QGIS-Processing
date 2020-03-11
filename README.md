@@ -1,8 +1,15 @@
 # QGIS-Processing
-# header H1
+
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+
+## General info
 A collection of Processing models for QGIS 3
 
-Excel file to 2D points.model3
+
+## Excel file to 2D points.model3
 Creates 2D points from coordinates in an excel file. Model output is:
 - 2D points
 
