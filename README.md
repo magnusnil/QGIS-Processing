@@ -29,3 +29,5 @@ Filters points based on distance from line. Created in QGIS 3.4.11. Model output
 Geocodes an address list, using a separate table from Lantmäteriet. Filter points based on distance from line. Model output is:
 - List of geocoded addresses with 2D point geometry
 - List of addresses with incorrect information
+
+![Image description](https://github.com/magnusnil/QGIS-Processing/blob/master/Geocode%20address%20list.JPG)
