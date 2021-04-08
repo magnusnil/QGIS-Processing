@@ -8,7 +8,7 @@
       <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
         <Option name="color" type="QString" value=""/>
-        <Option name="component_description" type="QString" value="Drop a two attributes"/>
+        <Option name="component_description" type="QString" value="Drop two attributes"/>
         <Option name="component_height" type="double" value="30"/>
         <Option name="component_pos_x" type="double" value="1159.9739013889873"/>
         <Option name="component_pos_y" type="double" value="285.632754835991"/>
