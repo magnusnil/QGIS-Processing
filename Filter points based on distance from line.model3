@@ -431,16 +431,16 @@
         <Option name="color" type="QString" value=""/>
         <Option name="component_description" type="QString" value="Convert line to points for distance analysis"/>
         <Option name="component_height" type="double" value="30"/>
-        <Option name="component_pos_x" type="double" value="491.1322256771374"/>
-        <Option name="component_pos_y" type="double" value="267.56562221937895"/>
+        <Option name="component_pos_x" type="double" value="671.7875207604584"/>
+        <Option name="component_pos_y" type="double" value="273.8675511176344"/>
         <Option name="component_width" type="double" value="200"/>
         <Option name="outputs_collapsed" type="bool" value="true"/>
         <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
       <Option name="component_description" type="QString" value="Convert lines to points"/>
       <Option name="component_height" type="double" value="30"/>
-      <Option name="component_pos_x" type="double" value="440.1438570459219"/>
-      <Option name="component_pos_y" type="double" value="319.80906176418944"/>
+      <Option name="component_pos_x" type="double" value="444.34514297809216"/>
+      <Option name="component_pos_y" type="double" value="275.69555947640174"/>
       <Option name="component_width" type="double" value="200"/>
       <Option name="dependencies"/>
       <Option name="id" type="QString" value="saga:convertlinestopoints_1"/>
