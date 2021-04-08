@@ -17,7 +17,7 @@ Creates 2D points from coordinates in an excel file. Model output is:
 <br/>
 
 ## Filter points based on distance from line
-Filters points based on distance from line. Created in QGIS 3.4.11. Model output is:
+Filters points based on distance from line. Created in QGIS 3.18.1. Model output is:
 - Points 0-1 km from line
 - Points 1-5 km from line
 
