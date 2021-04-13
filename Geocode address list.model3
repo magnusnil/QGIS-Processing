@@ -92,8 +92,8 @@
           </Option>
           <Option type="QString" name="component_description" value="IncorrectAdrdesses"/>
           <Option type="double" name="component_height" value="30"/>
-          <Option type="double" name="component_pos_x" value="1982.0973411020493"/>
-          <Option type="double" name="component_pos_y" value="607.2759075475982"/>
+          <Option type="double" name="component_pos_x" value="1980.6937733718323"/>
+          <Option type="double" name="component_pos_y" value="580.6081206734732"/>
           <Option type="double" name="component_width" value="200"/>
           <Option type="invalid" name="default_value"/>
           <Option type="bool" name="mandatory" value="false"/>
@@ -246,8 +246,8 @@
           </Option>
           <Option type="QString" name="component_description" value="AddressPoints"/>
           <Option type="double" name="component_height" value="30"/>
-          <Option type="double" name="component_pos_x" value="1983.603746219493"/>
-          <Option type="double" name="component_pos_y" value="422.389198730761"/>
+          <Option type="double" name="component_pos_x" value="1979.3930430288417"/>
+          <Option type="double" name="component_pos_y" value="527.6567784970437"/>
           <Option type="double" name="component_width" value="200"/>
           <Option type="invalid" name="default_value"/>
           <Option type="bool" name="mandatory" value="false"/>
@@ -625,10 +625,10 @@
     <Option type="Map">
       <Option type="QString" name="color" value=""/>
       <Option type="QString" name="component_description" value="Output"/>
-      <Option type="double" name="component_height" value="283.4392761855653"/>
-      <Option type="double" name="component_pos_x" value="1987.8912852869153"/>
-      <Option type="double" name="component_pos_y" value="502.4957600777976"/>
-      <Option type="double" name="component_width" value="275.5560902718055"/>
+      <Option type="double" name="component_height" value="140.27536770342084"/>
+      <Option type="double" name="component_pos_x" value="1973.1538241196356"/>
+      <Option type="double" name="component_pos_y" value="547.4099274447449"/>
+      <Option type="double" name="component_width" value="248.88830339768015"/>
       <Option type="bool" name="outputs_collapsed" value="true"/>
       <Option type="bool" name="parameters_collapsed" value="true"/>
       <Option type="QString" name="uuid" value="{a490caa2-a94a-438a-ab56-42999de3c65a}"/>
