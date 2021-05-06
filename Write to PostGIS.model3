@@ -1,0 +1,505 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="native:addautoincrementalfield_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:addautoincrementalfield" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="Create id" type="QString"/>
+        <Option name="component_height" value="30" type="double"/>
+        <Option name="component_pos_x" value="612.74355" type="double"/>
+        <Option name="component_pos_y" value="342.691691780822" type="double"/>
+        <Option name="component_width" value="70" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Add autoincremental field" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="432.5435500000001" type="double"/>
+      <Option name="component_pos_y" value="343.4916917808219" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:addautoincrementalfield_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="id" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="GROUP_FIELDS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="StringList">
+              <Option value="" type="QString"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:retainfields_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="SORT_ASCENDING" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="true" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="SORT_EXPRESSION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="SORT_NULLS_FIRST" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="START" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:filter_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config" type="Map">
+        <Option name="outputs" type="List">
+          <Option type="Map">
+            <Option name="expression" value="andamal_1t = 'Bostad; Småhus friliggande'" type="QString"/>
+            <Option name="isModelOutput" value="true" type="bool"/>
+            <Option name="name" value="Småhus" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+      <Option name="alg_id" value="native:filter" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="Filter for buildings" type="QString"/>
+        <Option name="component_height" value="30" type="double"/>
+        <Option name="component_pos_x" value="878.9277175113258" type="double"/>
+        <Option name="component_pos_y" value="441.600735664245" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Feature filter" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="875.1668388670704" type="double"/>
+      <Option name="component_pos_y" value="498.14678284811765" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:filter_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:refactorfields_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:postgisexecutesql_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:postgisexecutesql" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="Add comment in PostGIS" type="QString"/>
+        <Option name="component_height" value="30" type="double"/>
+        <Option name="component_pos_x" value="1350.3879961972548" type="double"/>
+        <Option name="component_pos_y" value="647.097237583876" type="double"/>
+        <Option name="component_width" value="133" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="PostgreSQL execute SQL" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="1152.645292772597" type="double"/>
+      <Option name="component_pos_y" value="647.6783252551088" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="qgis:importintopostgis_1" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="native:postgisexecutesql_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="DATABASE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="PostGIS localhost" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="SQL" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="COMMENT ON TABLE public.buildings IS 'Buildings';" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:refactorfields_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:refactorfields" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="Rename attributes" type="QString"/>
+        <Option name="component_height" value="30" type="double"/>
+        <Option name="component_pos_x" value="629.4163294520548" type="double"/>
+        <Option name="component_pos_y" value="420.5469938356164" type="double"/>
+        <Option name="component_width" value="104.80000000000007" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Refactor fields" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="433.3435499999998" type="double"/>
+      <Option name="component_pos_y" value="441.8916917808219" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:refactorfields_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELDS_MAPPING" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option type="Map">
+                <Option name="expression" value="&quot;id&quot;" type="QString"/>
+                <Option name="length" value="5" type="int"/>
+                <Option name="name" value="id" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="type" value="2" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" value="&quot;OBJEKT_ID&quot;" type="QString"/>
+                <Option name="length" value="36" type="int"/>
+                <Option name="name" value="objekt_id" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" value="&quot;DETALJTYP&quot;" type="QString"/>
+                <Option name="length" value="10" type="int"/>
+                <Option name="name" value="detaljtyp" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" value="&quot;ADAT&quot;" type="QString"/>
+                <Option name="length" value="16" type="int"/>
+                <Option name="name" value="adat" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" value="&quot;ANDAMAL_1T&quot;" type="QString"/>
+                <Option name="length" value="60" type="int"/>
+                <Option name="name" value="andamal_1t" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:addautoincrementalfield_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:retainfields_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:retainfields" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="Drop unwanted attributes" type="QString"/>
+        <Option name="component_height" value="30" type="double"/>
+        <Option name="component_pos_x" value="641.3435500000002" type="double"/>
+        <Option name="component_pos_y" value="247.4916917808219" type="double"/>
+        <Option name="component_width" value="136.8" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Retain fields" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="430.94355" type="double"/>
+      <Option name="component_pos_y" value="249.8916917808219" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:retainfields_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELDS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="StringList">
+              <Option value="OBJEKT_ID" type="QString"/>
+              <Option value="DETALJTYP" type="QString"/>
+              <Option value="ADAT" type="QString"/>
+              <Option value="ANDAMAL_1T" type="QString"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="Buildings" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:importintopostgis_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="qgis:importintopostgis" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="Write result to PostGIS" type="QString"/>
+        <Option name="component_height" value="30" type="double"/>
+        <Option name="component_pos_x" value="1345.8846299808326" type="double"/>
+        <Option name="component_pos_y" value="553.3788229668748" type="double"/>
+        <Option name="component_width" value="124.25530205479458" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Export to PostgreSQL" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="1139.9312482782884" type="double"/>
+      <Option name="component_pos_y" value="553.1173770764638" type="double"/>
+      <Option name="component_width" value="174.07191849315075" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="qgis:importintopostgis_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="CREATEINDEX" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="true" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="DATABASE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="PostGIS localhost" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="DROP_STRING_LENGTH" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="ENCODING" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="UTF-8" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="FORCE_SINGLEPART" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="GEOMETRY_COLUMN" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="geom" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:filter_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT_Småhus" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="LOWERCASE_NAMES" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="true" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="OVERWRITE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="true" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="PRIMARY_KEY" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="id" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="SCHEMA" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="public" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="TABLENAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="buildings" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues" type="Map">
+    <Option name="Buildings" value="Buildings_8a957fa7_b526_4a29_b1cc_0bad0af30399" type="QString"/>
+    <Option name="VERBOSE_LOG" value="true" type="bool"/>
+    <Option name="native:filter_1:OUTPUT_Småhus" type="QgsProcessingOutputLayerDefinition">
+      <Option type="Map">
+        <Option name="create_options" type="Map">
+          <Option name="fileEncoding" value="System" type="QString"/>
+        </Option>
+        <Option name="sink" type="Map">
+          <Option name="active" value="true" type="bool"/>
+          <Option name="type" value="1" type="int"/>
+          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="groupBoxes" type="List">
+    <Option type="Map">
+      <Option name="color" value="0,46,48,255" type="QString"/>
+      <Option name="component_description" value="Manage attributes" type="QString"/>
+      <Option name="component_height" value="317.4891089041095" type="double"/>
+      <Option name="component_pos_x" value="518.2703400684932" type="double"/>
+      <Option name="component_pos_y" value="335.5820921232877" type="double"/>
+      <Option name="component_width" value="414.6535801369864" type="double"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="uuid" value="{05e913ca-f790-4d90-a29e-d718d3377c0c}" type="QString"/>
+    </Option>
+    <Option type="Map">
+      <Option name="color" value="93,0,0,255" type="QString"/>
+      <Option name="component_description" value="Input" type="QString"/>
+      <Option name="component_height" value="142.40000000000006" type="double"/>
+      <Option name="component_pos_x" value="165.56246232876708" type="double"/>
+      <Option name="component_pos_y" value="247.63610273972606" type="double"/>
+      <Option name="component_width" value="233.59999999999997" type="double"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="uuid" value="{19244ae2-9f69-41b8-bf81-39c118e494dc}" type="QString"/>
+    </Option>
+    <Option type="Map">
+      <Option name="color" value="54,0,54,255" type="QString"/>
+      <Option name="component_description" value="Output" type="QString"/>
+      <Option name="component_height" value="202.53061003239384" type="double"/>
+      <Option name="component_pos_x" value="1237.805307378093" type="double"/>
+      <Option name="component_pos_y" value="589.8624951063597" type="double"/>
+      <Option name="component_width" value="405.7785047945208" type="double"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="uuid" value="{370c18a7-409f-42c9-90ee-10a8c70c2e7d}" type="QString"/>
+    </Option>
+    <Option type="Map">
+      <Option name="color" value="" type="QString"/>
+      <Option name="component_description" value="This model manages attributes, filter features and writes the output to PostGIS" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="389.7053357996291" type="double"/>
+      <Option name="component_pos_y" value="117.91186084670001" type="double"/>
+      <Option name="component_width" value="578.0676277709265" type="double"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="uuid" value="{90e7733f-8283-44f7-8d0a-97281915a39e}" type="QString"/>
+    </Option>
+    <Option type="Map">
+      <Option name="color" value="" type="QString"/>
+      <Option name="component_description" value="Filter" type="QString"/>
+      <Option name="component_height" value="160.6738176956277" type="double"/>
+      <Option name="component_pos_x" value="874.6622713975195" type="double"/>
+      <Option name="component_pos_y" value="474.5861483437437" type="double"/>
+      <Option name="component_width" value="245.28491563993953" type="double"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="uuid" value="{fcb40072-cd85-4c60-8cac-f5fc3c699697}" type="QString"/>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option name="model_group" value="Test" type="QString"/>
+  <Option name="model_name" value="Write buildings to PostGIS" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="Buildings" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" value="Buildings" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
+      <Option name="metadata"/>
+      <Option name="name" value="Buildings" type="QString"/>
+      <Option name="parameter_type" value="vector" type="QString"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option name="parameters" type="Map">
+    <Option name="Buildings" type="Map">
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="Buildings" type="QString"/>
+        <Option name="component_height" value="30" type="double"/>
+        <Option name="component_pos_x" value="162.5624623287671" type="double"/>
+        <Option name="component_pos_y" value="227.63610273972603" type="double"/>
+        <Option name="component_width" value="70" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Buildings" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="163.1624623287671" type="double"/>
+      <Option name="component_pos_y" value="271.63610273972597" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="name" value="Buildings" type="QString"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+    </Option>
+  </Option>
+</Option>
