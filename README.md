@@ -2,7 +2,6 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Excel file to 2D points](#excel-file-to-2D-points)
 * [Filter points based on distance from line](#filter-points-based-on-distance-from-line)
 * [Geocode address list](#geocode-address-list)
 * [Write to PostGIS](#write-to-postgis)
@@ -12,10 +11,6 @@
 A collection of Processing models for QGIS 3
 <br/><br/>
 
-## Excel file to 2D points
-Creates 2D points from coordinates in an excel file. Model output is:
-- 2D points
-<br/>
 
 ## Filter points based on distance from line
 Filters points based on distance from line. Created in QGIS 3.18.1. Model output is:
