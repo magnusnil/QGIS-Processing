@@ -31,7 +31,7 @@ Geocodes an address list, using a separate table from Lantmäteriet. Created in 
 <br/>
 
 ## Write to PostGIS
-Manages attributes, filter features and writes the output to PostGIS. Created in QGIS 3.18.1. Model output is:
+Manages attributes, filters features and writes the output to PostGIS. Created in QGIS 3.18.1. Model output is:
 - A new table in PostGIS
 
 ![Image description](https://github.com/magnusnil/QGIS-Processing/blob/master/Write%20to%20PostGIS.JPG)
